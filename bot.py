@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from telegram import Update, ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ConversationHandler, CallbackContext
+from aiohttp import web
 
 # Load environment variables from .env file
 load_dotenv()
